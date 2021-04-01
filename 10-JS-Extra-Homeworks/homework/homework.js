@@ -58,7 +58,9 @@ function capicua(numero){
   //Escribe tu código aquí
   let string = numero.toString()
 
-  string = string.split('').reverse().join('').Number(string)
+  string = string.split('').reverse().join('')
+
+  string = Number(string)
   
   return numero === string ? 'Es capicua' : 'No es capicua'
 }
@@ -90,7 +92,16 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí
-  
+  let interSection = []
+
+  for (let i = 0; i < arreglo1.length; i++){
+    for (let j = 0; j < arreglo2.length; j++){
+
+      if (arreglo1[i] === arreglo2[j]) interSection.push(arreglo1[i])
+    }
+  }
+
+  return interSection
 }
 
 
