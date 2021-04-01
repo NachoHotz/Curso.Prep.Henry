@@ -29,14 +29,10 @@ function capToFront(s) {
   //Escribe tu código aquí
   let arrayS = s.split('')
 
-  let filteredUpperCase = arrayS.filter(el => el === el.toUpperCase())
+  let filteredUpperCase = arrayS.filter(el => el === el.toUpperCase()).join('')
 
-  filteredUpperCase = filteredUpperCase.join('')
-
-  let filteredLowerCase = arrayS.filter(el => el === el.toLowerCase())
-
-  filteredLowerCase = filteredLowerCase.join('')
-
+  let filteredLowerCase = arrayS.filter(el => el === el.toLowerCase()).join('')
+  
   let newString = filteredUpperCase + filteredLowerCase
 
   return newString
