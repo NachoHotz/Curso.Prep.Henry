@@ -62,15 +62,9 @@ function capicua(numero){
   //Escribe tu código aquí
   let string = numero.toString()
 
-  string = string.split('').reverse().join('')
-
-  string = Number(string)
-
-  if(numero === string){
-    return 'Es capicua'
-  }
-
-  return 'No es capicua'
+  string = string.split('').reverse().join('').Number(string)
+  
+  return numero === string ? 'Es capicua' : 'No es capicua'
 }
 
 
