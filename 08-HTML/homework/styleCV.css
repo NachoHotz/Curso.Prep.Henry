@@ -10,3 +10,15 @@ img{
 #Work{
     font-size: medium;
 }
+
+#conclusion { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#Final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
