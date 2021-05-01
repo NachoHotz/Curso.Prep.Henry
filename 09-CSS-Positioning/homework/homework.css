@@ -7,7 +7,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-    display: flex;
+    display: block;
     text-align: center;
 }
 
@@ -26,8 +26,8 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 #ejercicioTres {
     /*display: flex;*/
     position: absolute;
-    left: 200px;
     top: 100px;
+    left: 200px;
 }
 
 
@@ -39,6 +39,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
     position: fixed;
     align-items: flex-end;
     top: 0px;
+    /*left: 0px;*/
 }
 
 
