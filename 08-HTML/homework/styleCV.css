@@ -1,24 +1,24 @@
-img{
-    height: 200px;
-    margin-left: 100px;
+img {
+  height: 200px;
+  margin-left: 100px;
 }
 
-#List{
-    font-size: 16px;
+#List {
+  font-size: 16px;
 }
 
-#Work{
-    font-size: medium;
+#Work {
+  font-size: medium;
 }
 
-#conclusion { 
-    display: flex;
-    justify-content: center;
-    align-content: center;
+#conclusion {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 #Final {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

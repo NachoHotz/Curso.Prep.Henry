@@ -1,29 +1,30 @@
-body{
-    background-image: url(https://wallpapercave.com/wp/wp2543332.jpg)
+body {
+  background-image: url(https://wallpapercave.com/wp/wp2543332.jpg);
 }
 
-h1{
-    color: blue;
+h1 {
+  color: blue;
 }
 
-#thirdDiv{
-    height: 600px;
-    width: 400px;
-    background-color: cornflowerblue;
-    padding: 50px;
-    border-width: 100px;
-    border-color: green;
+#thirdDiv {
+  height: 600px;
+  width: 400px;
+  background-color: cornflowerblue;
+  padding: 50px;
+  border-width: 100px;
+  border-color: green;
 }
 
-img{
-    width: 400px;
+img {
+  width: 400px;
 }
 
-#spanId{
-    font-size: 18px;
-    margin: 50px;
+#spanId {
+  font-size: 18px;
+  margin: 50px;
 }
 
-.divClass{
-    color: whitesmoke;
+.divClass {
+  color: whitesmoke;
 }
+
