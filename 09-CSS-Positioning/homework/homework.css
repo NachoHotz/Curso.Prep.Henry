@@ -32,11 +32,8 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Acá va tu código */
 #ejercicioCuatro {
-  display: flex;
   position: fixed;
-  align-items: flex-end;
   top: 0px;
-  /*left: 0px;*/
 }
 
 /* Ejercicio 5: */
@@ -44,10 +41,10 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Acá va tu código */
 #ejercicioCinco {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
-  width: 85%;
   justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 87%;
 }
 
 /* Ejercicio 6. */
