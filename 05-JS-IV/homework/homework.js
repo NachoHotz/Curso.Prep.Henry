@@ -40,7 +40,6 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
   let result = objetoMisterioso.numeroMisterioso * 5;
-
   return result;
 }
 
@@ -49,9 +48,7 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-
   delete objeto[unaPropiedad];
-
   return objeto;
 }
 
@@ -59,7 +56,6 @@ function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-
   let objeto = {
     nombre: nombre,
     email: email,
@@ -73,9 +69,7 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-
   if (usuario["email"]) return true;
-
   return false;
 }
 
@@ -85,7 +79,6 @@ function tienePropiedad(objeto, propiedad) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (objeto[propiedad]) return true;
-
   return false;
 }
 
@@ -94,7 +87,6 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-
   return usuario["password"] === password;
 }
 
@@ -113,7 +105,6 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // // Tu código:
   usuario.amigos.push(nuevoAmigo);
-
   return usuario;
 }
 
@@ -137,7 +128,6 @@ function sumarLikesDeUsuario(usuario) {
   // Devuelve la suma
   // Tu código:
   let suma = usuario.posts.reduce((acc, el) => acc + el.likes, 0);
-
   return suma;
 }
 
