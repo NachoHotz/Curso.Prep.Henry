@@ -18,11 +18,11 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
   //Escribe tu código aquí
-  let counters = {};
+  var counters = {};
 
   string = string.split('');
 
-  for(let i = 0; i < string.length; i++){
+  for(var i = 0; i < string.length; i++){
     if(!counters[string[i]]){
         counters[string[i]] = 0;
     }
@@ -38,17 +38,17 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
-  let arrayS = s.split("");
+  var arrayS = s.split("");
 
-  let filteredUpperCase = arrayS
+  var filteredUpperCase = arrayS
     .filter((el) => el === el.toUpperCase())
     .join("");
 
-  let filteredLowerCase = arrayS
+  var filteredLowerCase = arrayS
     .filter((el) => el === el.toLowerCase())
     .join("");
 
-  let newString = filteredUpperCase + filteredLowerCase;
+  var newString = filteredUpperCase + filteredLowerCase;
 
   return newString;
 }
@@ -69,7 +69,7 @@ function capicua(numero) {
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
-  let string = numero.toString();
+  var string = numero.toString();
 
   string = string.split("").reverse().join("");
 
@@ -82,9 +82,9 @@ function deleteAbc(cadena) {
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
-  let array = cadena.split("");
+  var array = cadena.split("");
 
-  let filtered = array
+  var filtered = array
     .filter((el) => el !== "a" && el !== "b" && el !== "c")
     .join("");
 
@@ -104,10 +104,10 @@ function buscoInterseccion(arreglo1, arreglo2) {
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí
-  let interSection = [];
+  var interSection = [];
 
-  for (let i = 0; i < arreglo1.length; i++) {
-    for (let j = 0; j < arreglo2.length; j++) {
+  for (var i = 0; i < arreglo1.length; i++) {
+    for (var j = 0; j < arreglo2.length; j++) {
       if (arreglo1[i] === arreglo2[j]) interSection.push(arreglo1[i]);
     }
   }

@@ -6,7 +6,7 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-  let gato = {
+  var gato = {
     nombre: nombre,
     edad: edad,
 
@@ -39,7 +39,7 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-  let result = objetoMisterioso.numeroMisterioso * 5;
+  var result = objetoMisterioso.numeroMisterioso * 5;
   return result;
 }
 
@@ -56,7 +56,7 @@ function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-  let objeto = {
+  var objeto = {
     nombre: nombre,
     email: email,
     password: password,
