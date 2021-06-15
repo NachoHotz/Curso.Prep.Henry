@@ -26,10 +26,8 @@ function numberOfCharacters(string) {
     if(!counters[string[i]]){
         counters[string[i]] = 0;
     }
-
     counters[string[i]]++;
   }
-
   return counters;
 }
 
@@ -49,7 +47,6 @@ function capToFront(s) {
     .join("");
 
   var newString = filteredUpperCase + filteredLowerCase;
-
   return newString;
 }
 
@@ -60,7 +57,6 @@ function asAmirror(str) {
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
   str = str.split("").reverse().join("").split(" ").reverse().join(" ");
-
   return str;
 }
 
@@ -72,7 +68,6 @@ function capicua(numero) {
   var string = numero.toString();
 
   string = string.split("").reverse().join("");
-
   string = Number(string);
 
   return numero === string ? "Es capicua" : "No es capicua";
@@ -111,7 +106,6 @@ function buscoInterseccion(arreglo1, arreglo2) {
       if (arreglo1[i] === arreglo2[j]) interSection.push(arreglo1[i]);
     }
   }
-
   return interSection;
 }
 

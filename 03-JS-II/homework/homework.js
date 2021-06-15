@@ -8,7 +8,6 @@ function obtenerMayor(x, y) {
   if (x > y) {
     return x;
   } else if (y > x) return y;
-
   return x;
 }
 
@@ -17,7 +16,6 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18) return "Allowed";
-
   return "Not allowed";
 }
 
@@ -83,7 +81,6 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero === 10 || numero === 5) return true;
-
   return false;
 }
 
@@ -92,7 +89,6 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero < 50 && numero > 20) return true;
-
   return false;
 }
 
@@ -115,7 +111,6 @@ function fizzBuzz(numero) {
   if (numero % 15 === 0) return "fizzbuzz";
   if (numero % 3 === 0) return "fizz";
   if (numero % 5 === 0) return "buzz";
-
   return numero;
 }
 
@@ -147,6 +142,7 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
   if (numero < 2) return false;
   if (numero === 2) return true;
+
   for (var i = 2; i < numero; i++) {
     if (numero % i === 0) {
       return false;
@@ -170,6 +166,7 @@ function tablaDelSeis() {
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
   var arrayTablaDel6 = [];
+
   for (var i = 0; i < 11; i++) {
     arrayTablaDel6.push(6 * i);
   }

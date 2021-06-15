@@ -14,7 +14,6 @@ function crearGato(nombre, edad) {
       return "Meow!";
     },
   };
-
   return gato;
 }
 
@@ -61,7 +60,6 @@ function nuevoUsuario(nombre, email, password) {
     email: email,
     password: password,
   };
-
   return objeto;
 }
 
@@ -94,7 +92,6 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
-
   usuario.password = nuevaPassword;
   return usuario;
 }
@@ -132,7 +129,6 @@ function sumarLikesDeUsuario(usuario) {
   for(var i = 0; i < usuario.posts.length; i++) {
     suma = suma + usuario.posts[i].likes;
   }
-
   return suma;
 }
 

@@ -26,7 +26,6 @@ function sumarArray(numeros, cb) {
   // No es necesario devolver nada
   //Tu código:
   var suma = numeros.reduce((acc, el) => acc + el, 0);
-
   cb(suma);
 }
 
@@ -43,7 +42,6 @@ function map(array, cb) {
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
   var newArray = array.map((el) => cb(el));
-
   return newArray;
 }
 
@@ -52,7 +50,6 @@ function filter(array) {
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
   var newArray = array.filter((el) => el.charAt(0) === "a");
-
   return newArray;
 }
 

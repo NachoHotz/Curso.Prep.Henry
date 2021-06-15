@@ -34,7 +34,6 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // y devuelve el array
   // Tu código:
   array.push(elemento);
-
   return array;
 }
 
@@ -44,7 +43,6 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Pista: usa el método `.unshift`
   // Tu código:
   array.unshift(elemento);
-
   return array;
 }
 
@@ -64,7 +62,6 @@ function arrayContiene(array, elemento) {
   for (var i = 0; i < array.length; i++) {
     if (array[i] === elemento) return true;
   }
-
   return false;
 }
 
@@ -89,7 +86,6 @@ function promedioResultadosTest(resultadosTest) {
   for (var i = 0; i < resultadosTest.length; i++) {
     suma = suma + resultadosTest[i];
   }
-
   return suma / resultadosTest.length;
 }
 
@@ -102,7 +98,6 @@ function numeroMasGrande(numeros) {
   for (var i = 0; i < numeros.length; i++) {
     if (numeros[i] > max) max = numeros[i];
   }
-
   return max;
 }
 
@@ -117,7 +112,6 @@ function multiplicarArgumentos() {
   for (var i = 0; i < arguments.length; i++) {
     total = total * arguments[i];
   }
-
   return total;
 }
 
@@ -129,7 +123,6 @@ function cuentoElementos(arreglo) {
   for (var i = 0; i < arreglo.length; i++) {
     if (arreglo[i] > 19) cantidad++;
   }
-
   return cantidad;
 }
 
@@ -149,7 +142,6 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   n = n.toString();
-
   return n.charAt(0) === "9";
 }
 
