@@ -38,11 +38,13 @@ function capToFront(s) {
   //Escribe tu código aquí
   var arrayS = s.split("");
 
-  var filteredUpperCase = arrayS
+  var filteredUpperCase = 
+    arrayS
     .filter((el) => el === el.toUpperCase())
     .join("");
 
-  var filteredLowerCase = arrayS
+  var filteredLowerCase = 
+    arrayS
     .filter((el) => el === el.toLowerCase())
     .join("");
 
@@ -56,7 +58,14 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
-  str = str.split("").reverse().join("").split(" ").reverse().join(" ");
+  str = 
+    str
+     .split("")
+     .reverse()
+     .join("")
+     .split(" ")
+     .reverse()
+     .join(" ");
   return str;
 }
 
@@ -67,9 +76,13 @@ function capicua(numero) {
   //Escribe tu código aquí
   var string = numero.toString();
 
-  string = string.split("").reverse().join("");
-  string = Number(string);
+  string = 
+    string
+     .split("")
+     .reverse()
+     .join("");
 
+  string = Number(string);
   return numero === string ? "Es capicua" : "No es capicua";
 }
 
@@ -78,11 +91,10 @@ function deleteAbc(cadena) {
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
   var array = cadena.split("");
-
-  var filtered = array
+  var filtered = 
+    array
     .filter((el) => el !== "a" && el !== "b" && el !== "c")
     .join("");
-
   return filtered;
 }
 
@@ -91,7 +103,7 @@ function sortArray(arr) {
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
   return arr.sort(function(a, b) {
-    a.length - b.length
+    return a.length - b.length
   });
 }
 
@@ -101,14 +113,14 @@ function buscoInterseccion(arreglo1, arreglo2) {
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí
-  var interSection = [];
+  var intersection = [];
 
   for (var i = 0; i < arreglo1.length; i++) {
     for (var j = 0; j < arreglo2.length; j++) {
-      if (arreglo1[i] === arreglo2[j]) interSection.push(arreglo1[i]);
+      if (arreglo1[i] === arreglo2[j]) intersection.push(arreglo1[i]);
     }
   }
-  return interSection;
+  return intersection;
 }
 
 // No modificar nada debajo de esta línea
